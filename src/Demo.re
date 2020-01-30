@@ -70,10 +70,6 @@ input[1][1] = (-1);
 input[2][2] = (-1);
 input[2][3] = (-1);
 
-let output = Array.make_matrix(4, 4, 0);
-
-output[0][0] = 1;
-
 let res = go(input, (0, 0), []);
 
 let rec printMov = l =>

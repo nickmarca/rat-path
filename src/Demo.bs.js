@@ -147,10 +147,6 @@ Caml_array.caml_array_set(Caml_array.caml_array_get(input, 2), 2, -1);
 
 Caml_array.caml_array_set(Caml_array.caml_array_get(input, 2), 3, -1);
 
-var output = $$Array.make_matrix(4, 4, 0);
-
-Caml_array.caml_array_set(Caml_array.caml_array_get(output, 0), 0, 1);
-
 var res = go(input, /* tuple */[
       0,
       0
@@ -183,7 +179,6 @@ exports.caseRight = caseRight;
 exports.goBack = goBack;
 exports.go = go;
 exports.input = input;
-exports.output = output;
 exports.res = res;
 exports.printMov = printMov;
 /* input Not a pure module */
